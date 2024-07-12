@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            label {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div id="num">
+            <p>{{text}}</p>
+            <input type="text" v-on:keydown="changeText" />
+        </div>
+        <script>
+            var num = new Vue({
+                el: "#num",
+                data: {
+                    text: "hello",
+                },
+                methods: {
+                    changeText: function (event) {
+                        //
+                        if (event.code == "Enter")
+                            this.text = event.target.value;
+                    },
+                },
+            });
+        </script> 
+        
+        <div id="num">
+            <p>{{text}}</p>
+            <input type="text" v-on:keydown="handleKeydown" />
+        </div>
+        <script>
+            var num = new Vue({
+                el: "#num",
+                data: {
+                    text: "hello",
+                },
+                methods: {
+                    handleKeydown: function (event) {
+                        if (event.key === "Enter") {
+                            this.text = event.target.value;
+                            event.target.value = "";
+                        }
+                        console.log(event);
+                    },
+                },
+            });
+        </script>
+
+        <div id="num">
+            <p>{{animal}}</p>
+
+            <select v-model="animal">
+                <option value="강아지">강아지</option>
+                <option value="고양이">고양이</option>
+                <option value="병아리">병아리</option>
+            </select>
+            <br /><br /><br /><br /><br />
+            {{sex}}<br />
+            <label>
+                남자
+                <input v-model="sex" value="남자" type="radio" value="남자" />
+            </label>
+            <label>
+                여자
+                <input v-model="sex" value="여자" type="radio" value="여자" />
+            </label>
+            <br /><br /><br /><br /><br />
+
+            <label v-for="item in localList">
+                {{item}}
+                <input
+                    name="local"
+                    v-bind:value="item"
+                    type="checkbox"
+                    v-model="local"
+                />
+            </label>
+            ----------- {{local}}
+            <label v-for="(item, index) in localList">
+                {{item}}
+                <input type="radio" v-bind:value="item" v-model="local" />
+            </label>
+            <input type="text" v-model="message" v-on:input="checkNull" />
+        </div>
+
+        <script>
+            var num = new Vue({
+                el: "#num",
+                data: {
+                    message: "hello",
+                    animal: "병아리",
+                    sex: "남자",
+                    local: [],
+                    localList: [
+                        "서울특별시",
+                        "경기도",
+                        "충청남도",
+                        "충청북도",
+                        "경상남도",
+                        "경상북도",
+                        "제주특별자치도",
+                        "강원특별자치도",
+                    ],
+                },
+                methods: {
+                    checkNull: function (event) {
+                        if (this.message == "") {
+                            this.message = "hello";
+                        }
+                    },
+                },
+            });
+        </script> -->
+        <!-- <div id="num">
+            <todo-item
+                v-for="({name, content}, index) in todoList"
+                v-bind:key="index"
+                v-bind:name="name"
+                v-bind:content="content"
+                
+            ></todo-item>
+        </div>
+        <script>
+            Vue.component("todo-item", {
+                props: ["name", "content"],
+                template: "<li>{{name}} - {{content}}</li>",
+            });
+
+            var num = new Vue({
+                el: "#num",
+                data: {
+                    todoList: [
+                        { name: "안승현", content: "밥먹기" },
+                        { name: "이준용", content: "자기" },
+                        { name: "안정현", content: "게임하기" },
+                    ],
+                },
+                methods: {},
+            });
+        </script> -->
+    </body>
+</html>
