@@ -12,7 +12,7 @@
         </style>
     </head>
     <body>
-        <!-- <div id="num">
+        <div id="num">
             <p>{{text}}</p>
             <input type="text" v-on:keydown="changeText" />
         </div>
@@ -30,8 +30,8 @@
                     },
                 },
             });
-        </script> 
-        
+        </script>
+
         <div id="num">
             <p>{{text}}</p>
             <input type="text" v-on:keydown="handleKeydown" />
@@ -118,14 +118,13 @@
                     },
                 },
             });
-        </script> -->
-        <!-- <div id="num">
+        </script>
+        <div id="num">
             <todo-item
                 v-for="({name, content}, index) in todoList"
                 v-bind:key="index"
                 v-bind:name="name"
                 v-bind:content="content"
-                
             ></todo-item>
         </div>
         <script>
@@ -145,6 +144,6 @@
                 },
                 methods: {},
             });
-        </script> -->
+        </script>
     </body>
 </html>
